@@ -1,69 +1,87 @@
 {
   "categories": [
-    {
-      "remote_name": "B2ACCESS",
-      "displayed_name": "B2ACCESS",
+        {
+      "remote_name": "Managed_Compute",
+      "displayed_name": "Managed Compute",
       "items": [
         {
-          "remote_name": "B2ACCESS CDI",
-          "displayed_name": "B2ACCESS CDI"
+          "remote_name": "PSNC",
+          "displayed_name": "PSNC Managed Compute Infrastructure"
+        },
+         {
+          "remote_name": "safespring",
+          "displayed_name": "SafeSpring Managed Compute Infrastructure"
+        }  
+      ]
+    },
+        {
+      "remote_name": "Managed_Containers",
+      "displayed_name": "Managed Containers",
+      "items": [
+        {
+          "remote_name": "SafeSpring_Container",
+          "displayed_name": "SafeSpring Managed Container Platform"
+        },
+       {
+          "remote_name": "PSNC_Container",
+          "displayed_name": "PSNC Managed Container Platform"
+        }    
+      ]
+    },
+        {
+      "remote_name": "Bulk_data_Transfer",
+      "displayed_name": "Bulk data Transfer",
+      "items": [
+        {
+          "remote_name": "PSNC_bulk_data_transfer",
+          "displayed_name": "PSNC Bulk Data Transfer"
         }
       ]
     },
-    {
-      "remote_name": "B2DROP",
-      "displayed_name": "B2DROP",
+        {
+      "remote_name": "File_Synchronisation_Sharing",
+      "displayed_name": "File Synchronisation Sharing",
       "items": [
         {
-          "remote_name": "B2DROP CDI",
-          "displayed_name": "B2DROP CDI"
+          "remote_name": "PSNC_Owncloud",
+          "displayed_name": "PSNC Owncloud"
         }
       ]
     },
-    {
-      "remote_name": "B2FIND",
-      "displayed_name": "B2FIND",
+        {
+      "remote_name": "Interactive_Notebooks",
+      "displayed_name": "nteractive_Notebooks",
       "items": [
         {
-          "remote_name": "B2FIND CDI",
-          "displayed_name": "B2FIND CDI"
+          "remote_name": "Cesnet",
+          "displayed_name": "Cesnet"
         }
       ]
-    },
+    },  
     {
-      "remote_name": "B2HANDLE",
-      "displayed_name": "B2HANDLE",
+      "remote_name": "Large_File_Sender",
+      "displayed_name": "Large File Sender",
       "items": [
         {
-          "remote_name": "B2HANDLE CDI",
-          "displayed_name": "B2HANDLE CDI"
-        }
-      ]
-    },
-    {
-      "remote_name": "B2SHARE",
-      "displayed_name": "B2SHARE",
-      "items": [
-        {
-          "remote_name": "B2SHARE CDI",
-          "displayed_name": "B2SHARE CDI"
+          "remote_name": "PSNC-Safespring",
+          "displayed_name": "PSNC Safespring"
         }
       ]
     }
   ],
   "api": {
-    "endpoint": "eudat.status.devel.argo.grnet.gr/proxy",
-    "reportName": "Critical",
-    "groupType": "SERVICEGROUPS",
-    "supergroupType": "PROJECT"
+    "endpoint": "status-exchange.mon.staging.eosc.grnet.gr/proxy",
+    "reportName": "Default",
+    "groupType": "SITES",
+    "supergroupType": "NGI"
   },
-  "title": "EUDAT - Status",
-  "copyright": "Copyright 2022 - All rights reserved - EUDAT",
+  "title": "EOSC Platform (Exchange) - Status",
+  "copyright": "Copyright 2022 - All rights reserved - EOSC Exchange Monitoring",
   "theme": {
-    "header-gradient-color-start": "#F6A506",
-    "header-gradient-color-end": "#F6A506",
-    "footer-gradient-color-start": "#F6A506",
-    "footer-gradient-color-end": "#F6A506",
+    "header-gradient-color-start": "#05cae7",
+    "header-gradient-color-end": "#0C2BD5",
+    "footer-gradient-color-start": "#05cae7",
+    "footer-gradient-color-end": "#0C2BD5",
     "footer-copyright-text-color": "#fff",
     "logo": "../assets/logo.png"
   }

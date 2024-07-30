@@ -80,6 +80,19 @@ const StatusTable = (props: PropsT) => {
     return [];
   };
 
+  // this function searches the CATEGORIES based on a category remoteName 
+  // and returns the category's displayed name if available (else just echoes back the remoteName)
+  const getCategoryDisplayedName = (remoteName: string) => {
+    for (let category of CATEGORIES) {
+      if (category["remote_name"] === remoteName) {
+        return category["displayed_name"]
+      }
+    }
+    return remoteName
+  }
+
+  
+
   const servicesTransform = (props: PropsT): CustomServiceT[] => {
     let services: CustomServiceT[] = [];
     if (props.groupStatus["groups"]) {
@@ -204,7 +217,7 @@ const StatusTable = (props: PropsT) => {
         });
       }
     });
-    console.log(divs);
+   
     return divs;
   };
 
@@ -267,6 +280,9 @@ const StatusTable = (props: PropsT) => {
             }
             let availability = null;
             let reliability = null;
+      
+     
+      
             if (result["availability"]) {
               availability = (
                 <div>
@@ -299,7 +315,7 @@ const StatusTable = (props: PropsT) => {
                   <div
                     className={`${styles["service_category_container"]} ${styles["header"]} ${styles["bold"]} ${styles["service_name"]}`}
                   >
-                    <div>{service}</div>
+                    <div>{getCategoryDisplayedName(service)}</div>
                     <div
                       className={`${styles["service_category_container"]} ${styles["font_weight_regular"]} ${styles["tiny"]}`}
                     >
